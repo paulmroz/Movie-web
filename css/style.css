@@ -1,0 +1,87 @@
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+.wrapper{
+	width: 1500px;
+	max-width: 90%;
+	margin:0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: 300;
+}
+
+
+#top_header {
+	padding: 1em 0 ;
+	background-color: #E1E3E4;
+}
+
+#top_header .logo {
+	float: left;
+	text-transform:uppercase;
+	font-size: 2em;
+	font-weight:700; 
+}
+
+.logo span {
+	font-weight: 500;
+	color:red;
+}
+
+#main_nav {
+	float: right;
+	font-size: 1.5em;
+	padding-top:1.3em; 
+}
+
+#main_nav  a {
+	color: #313131;
+	text-decoration: none;
+	margin-left: 1em;
+}
+
+#banner {
+	background: url(../img/banner_background.jpeg);
+	background-repeat: no-repeat;
+	background-size:cover;
+	width:100%; 
+	padding:7em 0;
+}
+
+.banner_content_wrapper {
+	width: 1500px;
+	max-width: 90%;
+	margin:0 auto;
+	text-align: center;
+}
+
+.banner_content_wrapper p {
+	font-weight: 500;
+	font-size :5em;
+	font-weight: 700;
+
+}
+.banner_content_wrapper span {
+	font-size: 2em;
+}
+
+#main_footer {
+	margin: 0 auto;
+	padding: 1.5em 0;
+	text-align: center;
+}
