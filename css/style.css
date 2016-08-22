@@ -1,3 +1,4 @@
+
 * {
 	box-sizing: border-box;
 }
@@ -82,6 +83,98 @@ h1, h2, h3, h4, h5, h6 {
 
 #main_footer {
 	margin: 0 auto;
-	padding: 1.5em 0;
+	padding: .5em 0;
 	text-align: center;
 }
+
+#series_content{
+	width:100%; 
+	padding:1em 0;
+	
+}
+
+.series_wrapper {
+	width: 1500px;
+	max-width: 90%;
+	margin:0 auto;
+	
+}
+
+.series_description{
+	width: 70%;
+	float:left;
+	padding: 1em 0;
+
+}
+
+.series_description a {
+	text-decoration: none;
+}
+.series_description p {
+	font-weight:100;
+	font-size: .8em;
+}
+
+#add_article {
+	padding: 3em;
+	background-color: #E1E3E4;
+}
+
+.article_wrapper {
+	width: 1500px;
+	max-width: 90%;
+}
+
+.add_components {
+	width: 100%;
+	max-width: 100%;
+}
+.add_components span {
+	color: red;
+}
+.add_components label {
+	font-size: .9em;
+}
+
+.add_components input, textarea {
+	border-radius:5px;
+	padding: .5em 0 ;
+	margin:1em 0;
+	border: 1px solid black;
+}
+
+
+
+.series_text_des{
+	width: 100%;
+	max-width: 100%;
+
+}
+
+.add_button{
+	margin-top: 1em;
+	padding: 1em 2em;
+	border-radius:5px; 
+	border: none;
+	background-color: #2185D0;
+	font-weight: 700;
+	color: white;
+}
+
+.delete_button{
+	width: 10%;
+	text-align: center;
+	padding: .09em;
+	border-radius: 2px;
+	border:solid .02em lightgray;
+	color: darkgray;
+
+}
+.error {
+	background-color: #CC1019;
+	color: white;
+	border-radius: 3px;
+	padding: 0.3em 0.4em;
+	font-size: 0.7em;
+}
+

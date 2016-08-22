@@ -7,10 +7,10 @@
 	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<!--Nagłówek-->
+	<!--navbar-->
 	<?php require 'includes/header.php';?>
 
-	<!--Baner-->
+	<!--content-->
 
 	<section id="banner" class="clearfix">
 		<div class="banner_content_wrapper">
@@ -19,7 +19,8 @@
 		</div>
 	</section>
 	
-	<!--Stopka-->
+	<!--footer-->
 	<?php require 'includes/footer.php' ?>
+
 </body>
 </html>
