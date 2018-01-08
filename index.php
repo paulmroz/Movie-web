@@ -1,26 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>rateFilms</title>
-	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<!--navbar-->
-	<?php require 'includes/header.php';?>
+<?php
 
-	<!--content-->
+require 'vendor/autoload.php';
 
-	<section id="banner" class="clearfix">
-		<div class="banner_content_wrapper">
-			<p>Witamy na naszej stronie!</p>
-			<span>Napisz recenzję swojego ulubionego filmu!.</span>
-		</div>
-	</section>
-	
-	<!--footer-->
-	<?php require 'includes/footer.php' ?>
+use App\Core\{Router, Request};
 
-</body>
-</html>
+$router = new Router;
+
+//require 'routes.php';
+
+require Router::load('app/routes.php')
+    ->direct(Request::uri(), Request::method());
