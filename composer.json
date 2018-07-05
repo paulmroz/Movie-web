@@ -3,5 +3,8 @@
     "classmap" :[
       "./"
     ]
+  },
+  "require": {
+    "friendsofphp/php-cs-fixer": "^2.12"
   }
 }

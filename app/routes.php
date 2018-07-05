@@ -9,4 +9,3 @@ $router->get('register', 'app/controllers/register.php');
 
 $router->post('movieController', 'app/controllers/AddDelMovie.php');
 $router->post('seriesController', 'app/controllers/AddDelSeries.php');
-

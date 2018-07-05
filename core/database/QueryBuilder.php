@@ -1,8 +1,8 @@
 <?php
 
 
-class QueryBuilder {
-
+class QueryBuilder
+{
     protected $pdo;
 
     public function __construct($pdo)
@@ -10,14 +10,13 @@ class QueryBuilder {
         $this->pdo=$pdo;
     }
 
-    public function selectAll($table){
-
+    public function selectAll($table)
+    {
         $statement=$this->pdo->prepare("select * from {$table}");
 
         $statement->execute();
 
         return $statement->fetchAll(PDO::FETCH_CLASS);
-
     }
     public function insert($table, $parameters)
     {
@@ -26,20 +25,17 @@ class QueryBuilder {
 
             $table,
 
-            implode(', ',array_keys($parameters)),
+            implode(', ', array_keys($parameters)),
 
-            ':'. implode(', :',array_keys($parameters))
+            ':'. implode(', :', array_keys($parameters))
 
         );
-       try {
+        try {
             $statement = $this->pdo->prepare($sql);
 
             $statement->execute($parameters);
-
-        } catch (Exception $e){
-
+        } catch (Exception $e) {
             die('Whoops, something went wrong.');
-
         }
     }
 
@@ -55,5 +51,4 @@ class QueryBuilder {
             die('Whoops, somethinh went wrong');
         }
     }
-
 }

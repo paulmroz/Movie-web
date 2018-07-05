@@ -4,7 +4,6 @@ namespace App\Core;
 
 class Router
 {
-
     protected $routes = [
 
         'GET' => [],
@@ -27,7 +26,6 @@ class Router
 
     public static function load($file)
     {
-
         $router = new static ;
 
         require $file;
